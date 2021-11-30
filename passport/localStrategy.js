@@ -2,6 +2,8 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const axios = require("axios");
 
+const dotenv = require("dotenv").config();
+
 module.exports = () => {
   passport.use(
     new LocalStrategy(
@@ -12,7 +14,7 @@ module.exports = () => {
       async (email, password, done) => {
         try {
           // 우리는 db서버를 따로 두기로 했으니까 여기서 비밀번호 해시처리에서 db서버로 쏴주자
-          const result = await axios.post("http://3.36.113.124:8080/signin", {
+          const result = await axios.post(process.env.DB_ADDRESS+"/signin", {
             email: email,
             password: password,
           });

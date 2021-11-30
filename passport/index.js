@@ -2,6 +2,8 @@ const passport = require("passport");
 const local = require("./localStrategy");
 const axios = require("axios");
 
+const dotenv = require("dotenv").config();
+
 // const User = require("../");
 
 // 세션 저장하는 곳
@@ -39,7 +41,7 @@ module.exports = () => {
 
   passport.deserializeUser(async (email, done) => {
     try {
-      const user1 = await axios.get("http://3.36.113.124:8080/userSession", {
+      const user1 = await axios.get(process.env.DB_ADDRESS + "/userSession", {
         params: {
           ID: email,
         },
