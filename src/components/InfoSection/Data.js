@@ -1,0 +1,106 @@
+// export const homeObjOne = {
+//   id: "about",
+//   lightBg: false,
+//   lightText: true,
+//   lightTextDesc: true,
+//   topLine: "개구리 거래소",
+//   headline: " 무한한 정보제공과 상장된 가상화폐의 서비스 가능 경로 정보 제공",
+//   description:
+//     "  회원가입과 동시에 250$ 상당의 가상화폐 획득! 2021년도 내의 유일한 이벤트! 자신의 투자성향과 다양한 사람들과의 수익률 경쟁",
+//   buttonLabel: "Get started",
+//   imgStart: true,
+//   // img: require("../../images/svg1.svg"),
+//   //alt: "Frog",
+//   dark: true,
+//   primary: true,
+//   darkText: true,
+//   link: "/about",
+// };
+
+export const homeETF = {
+  id: "discover",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "자기에게 적합한 ETF 탐색",
+  headline: " 분산 투자가 가능해 보다 안정적인 상장지수펀드(ETF)",
+  description: "분산 투자가 가능해 보다 안정적인 상장지수펀드(ETF) ETF는 거래소에 상장돼 주식과 똑같이 거래할 수 있는 펀드다.",
+  buttonLabel: "Learn More",
+  imgStart: true,
+  // img: require("../../images/svg2.svg"),
+  // alt: "discover",
+  dark: true,
+  primary: true,
+  darkText: true,
+  link: "/discover",
+};
+
+export const homeChart = {
+  id: "chart",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "코인 상세 정보",
+  headline: "비트/ 알트 코인 가격 차트를 살펴보고 가격 변동을 실시간으로 확인하세요.",
+  description: "자유로운 차트 도구 사용으로 미래의 정확성 향상",
+  buttonLabel: "Learn More",
+  imgStart: true,
+  dark: false,
+  primary: false,
+  darkText: true,
+  link: "/coins",
+};
+
+export const homeNews = {
+  id: "news",
+  lightBg: true,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "뉴스",
+  headline: " 가상자산 최신뉴스와 리서치",
+  description: "가상자산의 시황과 다양한 뉴스 컨텐츠를 실시간으로 제공합니다.",
+  buttonLabel: "Learn More",
+  imgStart: true,
+  dark: true,
+  primary: false,
+  darkText: true,
+  link: "/news",
+};
+
+export const homeMypage = {
+  id: "signup",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "마이페이지",
+  headline: " 자신의 자산을 API 로 연결하여 수익률및 투자행동 분석",
+  description:
+    "국내 가상화폐 거래소의 API 와 연동하여 자신의 투자행동을 분석하며 수익률을 한눈에 확인할 수 있습니다. ",
+  buttonLabel: "Start Now",
+  imgStart: false,
+  // img: require("../../images/svg2.svg"),
+  // alt: "paper",
+  dark: true,
+  primary: true,
+  darkText: true,
+  link: "/signup",
+};
+
+export const homePost = {
+  id: "community",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "커뮤니티",
+  headline: "게시판에서 여러 정보를 공유하세요",
+  description:
+    "국내 최고 규모의 가상화폐 커뮤니티! 나만의 투자 전략을 공유해보세요.",
+  buttonLabel: "Start Now",
+  imgStart: false,
+  // img: require("../../images/svg2.svg"),
+  // alt: "paper",
+  dark: true,
+  primary: true,
+  darkText: true,
+  link: "/signup",
+};

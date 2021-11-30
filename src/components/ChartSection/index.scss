@@ -1,0 +1,23 @@
+.coins-container{
+  min-width: 800px;
+  min-height: 700px;
+  margin: auto;
+  .input-box{
+    text-align: right;
+  }
+  img{
+    width: 32px;
+  }
+  a{
+    height: 32px;
+    line-height: 32px;
+    text-decoration: none;
+  }
+  a:hover{
+    cursor: pointer;
+  }
+  span{
+    height: 32px;
+    line-height: 32px;
+  }
+}

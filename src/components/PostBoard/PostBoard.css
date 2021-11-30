@@ -1,0 +1,77 @@
+.App {
+  display: block none;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid #333;
+  padding: 10px 0 30px 0;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 60%;
+}
+
+.nickname-input {
+  width: 200px;
+  height: 40px;
+  margin-left: 34%;
+  margin-right: 200px;
+}
+
+.submit-button {
+  border-radius: 50px;
+  background: #01bf71;
+  padding: 16px 64px;
+  color: #ffff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.commentLayerOpener {
+  border-radius: 30px;
+  background: #01bf71;
+  padding: 3px 20px;
+  color: #ffff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.ck.ck-editor {
+  width: 590px;
+  margin-left: 34%;
+}
+
+button.commentLayerOpener + div.commentLayer {
+  display: none;
+}
+button.commentLayerOpener.open + div.commentLayer {
+  display: block;
+}
+
+.form-wrapper .ck-widget__type-around__button,
+.form-wrapper .ck-widget__type-around__button {
+  display: none !important;
+}
+.form-wrapper .ck-widget_selected {
+  outline: none !important;
+}
+.userCommentContents img {
+  max-width: 800px;
+  width: 100%;
+}
+
+body {
+  min-height: 101vh;
+}
