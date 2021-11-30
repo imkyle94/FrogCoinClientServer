@@ -15,6 +15,7 @@ router.post("/join", isNotLoggedIn, async (req, res, next) => {
       email,
       password,
     });
+	  console.log(process.env.DB_ADDRESS);
     res.redirect("/");
   } catch (error) {
     console.error(error);
