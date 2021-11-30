@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const serverUrl = 'http://frogcoin.fun25.co.kr:80'
+const serverUrl = 'http://13.125.255.188:5000'
 
 /* Coingecko API */
 export const coingecko = axios.create({
