@@ -12,7 +12,7 @@ export const NewsContextProvider = (props) => {
 
   const { data, loading, error } = useAxios({
     method: "GET",
-    baseURL: "http://frogcoin.fun25.co.kr:80",
+    baseURL: "http://13.125.255.188:5000",
     url: "news",
   });
 

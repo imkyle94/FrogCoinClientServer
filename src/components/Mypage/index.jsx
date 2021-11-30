@@ -42,7 +42,7 @@ function getDetails(arr) {
 	});
 	return { currencyList, balanceList, length };
 }
-const baseUrl = "http://frogcoin.fun25.co.kr:80";
+const baseUrl = "http://13.125.255.188:5000";
 
 /* 마이페이지 */
 const Mypage = () => {

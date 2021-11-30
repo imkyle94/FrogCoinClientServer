@@ -20,13 +20,13 @@ import ApiKey from "../ApiKey";
 const Navbar = ({ toggle }) => {
   const { data, loading, error } = useAxios({
     method: "get",
-    baseURL: "http://frogcoin.fun25.co.kr:80",
+    baseURL: "http://15.164.103.227:7000",
     url: "auth/session",
   });
 
   const { data2, loading2, error2 } = useAxios({
     method: "get",
-    baseURL: "http://frogcoin.fun25.co.kr:80",
+    baseURL: "http://15.164.103.227:7000",
     url: "searchNum",
   });
 
@@ -34,7 +34,7 @@ const Navbar = ({ toggle }) => {
     e.preventDefault();
     try {
       console.log("된다");
-      await axios.get("http://frogcoin.fun25.co.kr:80/auth/logout");
+      await axios.get("http://15.164.103.227:7000/auth/logout");
       window.location.replace("/");
     } catch {
       console.log("로그아웃 오류");

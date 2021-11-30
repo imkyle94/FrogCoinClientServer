@@ -16,7 +16,7 @@ const CoinList = () => {
 	const fetchData = async () => {
 		// 업비트 코인 리스트 불러오기
 		// const response = await upbit.get('/market/all')
-		const response = await axios.get('http://frogcoin.fun25.co.kr:80' + '/upbit/market/all')
+		const response = await axios.get('http://13.125.255.188:5000' + '/upbit/market/all')
 		// BTC 마켓 제외하고 찾기
 		const coinList = response.data.filter((el)=>el.market.includes('KRW'))
 		const markets = coinList.map((el) => el.market).toString();
@@ -27,7 +27,7 @@ const CoinList = () => {
 		// 		markets : markets
 		// 	}
 		// })
-		const tickerData = await axios.post('http://frogcoin.fun25.co.kr:80' + '/upbit/ticker', {
+		const tickerData = await axios.post('http://13.125.255.188:5000' + '/upbit/ticker', {
 				markets : markets
 		})
 

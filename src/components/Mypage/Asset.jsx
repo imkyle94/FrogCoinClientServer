@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
 
-const baseUrl = "http://frogcoin.fun25.co.kr:80";
+const baseUrl = "http://13.125.255.188:5000";
 
 const Asset = ({ index, asset, editShow, inputMode, setInputMode }) => {
 	const [buyPrice, setBuyPrice] = useState(asset.avg_buy_price);

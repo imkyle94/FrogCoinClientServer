@@ -13,6 +13,10 @@ import {
   FormInput,
   FormLabel,
 } from "./SignupElements";
+import dotenv from "dotenv";
+
+dotenv.config();
+
 
 const SignUp = () => {
   const [password, setPassword] = useState('')
@@ -35,7 +39,7 @@ const SignUp = () => {
         <FormWrap>
           <Icon to="/">Frog</Icon>
           <FormContent>
-            <Form action="http://frogcoin.fun25.co.kr:80/auth/join" method="POST">
+            <Form action="http://13.125.255.188:5000/auth/join" method="POST">
               <FormH1>회원가입</FormH1>
               <FormLabel htmlFor="for">이메일</FormLabel>
               <FormInput type="email" name="email" required />

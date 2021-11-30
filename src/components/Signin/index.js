@@ -21,7 +21,7 @@ const SignIn = () => {
         <FormWrap>
           <Icon to="/">Frog</Icon>
           <FormContent>
-            <Form action="http://frogcoin.fun25.co.kr:80/auth/login" method="POST">
+            <Form action="http://13.125.255.188:5000/auth/login" method="POST">
               <FormH1>본인 어카운트로 로그인 하시오</FormH1>
               <FormLabel htmlFor="for">이메일</FormLabel>
               <FormInput type="email" name="email" required />

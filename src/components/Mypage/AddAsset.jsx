@@ -4,7 +4,7 @@ import { Button, Modal, Col, Form, Row } from "react-bootstrap";
 import useAxios from "../../hooks/useAxios";
 
 
-const baseUrl = "http://frogcoin.fun25.co.kr:80";
+const baseUrl = "http://13.125.255.188:5000";
 
 const FormG = ({ onChange, text, type, readOnly=false, value }) => {
 	return (
@@ -30,7 +30,7 @@ const AddAsset = ({ onHide, setAddMode }) => {
   
   const { data, loading, error } = useAxios({
     method: "GET",
-    baseURL: "http://frogcoin.fun25.co.kr:80",
+    baseURL: "http://13.125.255.188:5000",
     url: "coingecko/coinlist",
   });
 

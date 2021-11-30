@@ -23,7 +23,7 @@ const News = () => {
       let body = {
         keyword: 키워드,
       };
-      const news = await axios.post("http://frogcoin.fun25.co.kr:80/news", body);
+      const news = await axios.post("http://13.125.255.188:5000/news", body);
 
       setCoins();
       setCoins(news.data);
@@ -46,7 +46,7 @@ const News = () => {
 
   const { data, loading, error } = useAxios({
     method: "GET",
-    baseURL: "http://frogcoin.fun25.co.kr:80",
+    baseURL: "http://13.125.255.188:5000",
     url: "news",
   });
 

@@ -68,7 +68,7 @@ const ApiKey = () => {
         Secret: secret,
         whatKey: what,
       };
-      const news = await axios.post("http://frogcoin.fun25.co.kr:80/auth/key", body);
+      const news = await axios.post("http://13.125.255.188:5000/auth/key", body);
       window.location.replace("/");
     } catch {
       alert("이미 키가 존재합니다 덮어쓸까요 처럼 다시 묻는거 해볼까?");
